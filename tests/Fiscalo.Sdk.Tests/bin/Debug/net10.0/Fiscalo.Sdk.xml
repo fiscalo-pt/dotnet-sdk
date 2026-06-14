@@ -4,5 +4,195 @@
         <name>Fiscalo.Sdk</name>
     </assembly>
     <members>
+        <member name="T:Fiscalo.Sdk.FiscaloClient">
+            <summary>
+            Primary entry point for interacting with the Fiscalo API from .NET applications.
+            </summary>
+        </member>
+        <member name="F:Fiscalo.Sdk.FiscaloClient.DefaultBaseUrl">
+            <summary>
+            Default production base URL for the Fiscalo API.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.FiscaloClient.#ctor(System.String,System.String,System.Nullable{System.TimeSpan},System.Net.Http.HttpClient,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            Creates a new Fiscalo client using the provided API key and optional transport settings.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.FiscaloClient.#ctor(Fiscalo.Sdk.Configuration.FiscaloOptions,System.Net.Http.HttpClient,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            Creates a new Fiscalo client from a structured options object.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.FiscaloClient.#ctor(System.Net.Http.HttpClient,Fiscalo.Sdk.Configuration.FiscaloOptions,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            Creates a new Fiscalo client using an externally managed <see cref="P:Fiscalo.Sdk.FiscaloClient.HttpClient" />.
+            </summary>
+        </member>
+        <member name="P:Fiscalo.Sdk.FiscaloClient.ApiKey">
+            <summary>
+            API key used for authenticated requests.
+            </summary>
+        </member>
+        <member name="P:Fiscalo.Sdk.FiscaloClient.BaseUrl">
+            <summary>
+            Normalized API base URL used by the SDK.
+            </summary>
+        </member>
+        <member name="P:Fiscalo.Sdk.FiscaloClient.Timeout">
+            <summary>
+            Effective request timeout for outbound API calls.
+            </summary>
+        </member>
+        <member name="P:Fiscalo.Sdk.FiscaloClient.HttpClient">
+            <summary>
+            Low-level HTTP transport used by the SDK.
+            </summary>
+        </member>
+        <member name="P:Fiscalo.Sdk.FiscaloClient.Customers">
+            <summary>
+            Customer endpoints for create, read, list and update operations.
+            </summary>
+        </member>
+        <member name="P:Fiscalo.Sdk.FiscaloClient.Items">
+            <summary>
+            Item endpoints for catalog and pricing operations.
+            </summary>
+        </member>
+        <member name="P:Fiscalo.Sdk.FiscaloClient.DocumentSeries">
+            <summary>
+            Document series endpoints for issuing configuration.
+            </summary>
+        </member>
+        <member name="P:Fiscalo.Sdk.FiscaloClient.Documents">
+            <summary>
+            Document endpoints for creation, issuing and PDF generation workflows.
+            </summary>
+        </member>
+        <member name="T:Fiscalo.Sdk.Resources.CustomersResource">
+            <summary>
+            Provides access to Fiscalo customer endpoints.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.CustomersResource.#ctor(Fiscalo.Sdk.Support.FiscaloHttpClient)">
+            <summary>
+            Creates a customer resource wrapper over the shared Fiscalo transport.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.CustomersResource.ListAsync(System.Threading.CancellationToken)">
+            <summary>
+            Lists customers available in the current Fiscalo environment.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.CustomersResource.CreateAsync(Fiscalo.Sdk.Models.CreateCustomerRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new customer in Fiscalo.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.CustomersResource.GetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a single customer by identifier.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.CustomersResource.UpdateAsync(System.String,Fiscalo.Sdk.Models.UpdateCustomerRequest,System.Threading.CancellationToken)">
+            <summary>
+            Applies a partial update to an existing customer.
+            </summary>
+        </member>
+        <member name="T:Fiscalo.Sdk.Resources.DocumentSeriesResource">
+            <summary>
+            Provides access to Fiscalo document series endpoints.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentSeriesResource.#ctor(Fiscalo.Sdk.Support.FiscaloHttpClient)">
+            <summary>
+            Creates a document series resource wrapper over the shared Fiscalo transport.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentSeriesResource.ListAsync(System.Threading.CancellationToken)">
+            <summary>
+            Lists document series available in the current Fiscalo environment.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentSeriesResource.CreateAsync(Fiscalo.Sdk.Models.CreateDocumentSeriesRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new document series in Fiscalo.
+            </summary>
+        </member>
+        <member name="T:Fiscalo.Sdk.Resources.DocumentsResource">
+            <summary>
+            Provides access to Fiscalo document creation, issuing and PDF endpoints.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentsResource.#ctor(Fiscalo.Sdk.Support.FiscaloHttpClient)">
+            <summary>
+            Creates a document resource wrapper over the shared Fiscalo transport.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentsResource.ListAsync(System.Threading.CancellationToken)">
+            <summary>
+            Lists documents available in the current Fiscalo environment.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentsResource.CreateAsync(Fiscalo.Sdk.Models.CreateDocumentRequest,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new draft document.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentsResource.GetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a single document by identifier.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentsResource.AddLineAsync(System.String,Fiscalo.Sdk.Models.CreateDocumentLineRequest,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Adds a new line to an existing draft document.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentsResource.IssueAsync(System.String,Fiscalo.Sdk.Models.IssueDocumentRequest,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Issues a draft document and locks its fiscal data.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentsResource.GeneratePdfAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Requests Fiscalo to generate the PDF representation for a document.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.DocumentsResource.GetPdfAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Downloads the generated PDF bytes for a document.
+            </summary>
+        </member>
+        <member name="T:Fiscalo.Sdk.Resources.ItemsResource">
+            <summary>
+            Provides access to Fiscalo item endpoints.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.ItemsResource.#ctor(Fiscalo.Sdk.Support.FiscaloHttpClient)">
+            <summary>
+            Creates an item resource wrapper over the shared Fiscalo transport.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.ItemsResource.ListAsync(System.Threading.CancellationToken)">
+            <summary>
+            Lists items available in the current Fiscalo environment.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.ItemsResource.CreateAsync(Fiscalo.Sdk.Models.CreateItemRequest,System.Threading.CancellationToken)">
+            <summary>
+            Creates a new item in Fiscalo.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.ItemsResource.GetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Retrieves a single item by identifier.
+            </summary>
+        </member>
+        <member name="M:Fiscalo.Sdk.Resources.ItemsResource.UpdateAsync(System.String,Fiscalo.Sdk.Models.UpdateItemRequest,System.Threading.CancellationToken)">
+            <summary>
+            Applies a partial update to an existing item.
+            </summary>
+        </member>
     </members>
 </doc>

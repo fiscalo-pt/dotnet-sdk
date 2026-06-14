@@ -12,9 +12,10 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fiscalo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("Official .NET SDK for the Fiscalo Public API.")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute(("Official .NET SDK for the Fiscalo API with support for customers, items, document" +
+    " series, documents, idempotency and PDF workflows."))]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+809c73122a4225d6e3575ceb5d0100291d0be8fc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0+6a820e6adf05f90e09f632606f3aabaa8c973856")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fiscalo.Sdk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fiscalo.Sdk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.1.0.0")]

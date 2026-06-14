@@ -3,13 +3,17 @@
   <metadata>
     <id>Fiscalo.Sdk</id>
     <version>0.1.0</version>
+    <title>Fiscalo .NET SDK</title>
     <authors>Fiscalo</authors>
     <license type="expression">MIT</license>
     <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
     <projectUrl>https://docs.fiscalo.pt/integrations/dotnet</projectUrl>
-    <description>Official .NET SDK for the Fiscalo Public API.</description>
-    <tags>fiscalo invoice invoicing portugal api sdk billing</tags>
-    <repository type="git" url="https://github.com/fiscalo-pt/dotnet-sdk" commit="809c73122a4225d6e3575ceb5d0100291d0be8fc" />
+    <description>Official .NET SDK for the Fiscalo API with support for customers, items, document series, documents, idempotency and PDF workflows.</description>
+    <releaseNotes>Initial public release of the Fiscalo .NET SDK for sandbox and production integrations.</releaseNotes>
+    <tags>fiscalo dotnet aspnetcore csharp invoice invoicing portugal billing sdk api</tags>
+    <repository type="git" url="https://github.com/fiscalo-pt/dotnet-sdk" branch="refs/heads/main" commit="6a820e6adf05f90e09f632606f3aabaa8c973856" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="8.0.2" exclude="Build,Analyzers" />
