@@ -10,7 +10,7 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <PackageId>Fiscalo.Sdk</PackageId>
     <Title>Fiscalo .NET SDK</Title>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Fiscalo</Authors>
     <Company>Fiscalo</Company>
     <Description>Official .NET SDK for the Fiscalo API with support for customers, items, document series, documents, idempotency and PDF workflows.</Description>
