@@ -1,0 +1,15 @@
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/Fiscalo.Sdk.csproj.AssemblyReference.cache
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/Fiscalo.Sdk.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/Fiscalo.Sdk.AssemblyInfoInputs.cache
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/Fiscalo.Sdk.AssemblyInfo.cs
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/Fiscalo.Sdk.csproj.CoreCompileInputs.cache
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/Fiscalo.Sdk.sourcelink.json
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/bin/Release/net8.0/Fiscalo.Sdk.deps.json
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/bin/Release/net8.0/Fiscalo.Sdk.dll
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/bin/Release/net8.0/Fiscalo.Sdk.pdb
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/bin/Release/net8.0/Fiscalo.Sdk.xml
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/Fiscalo.Sdk.dll
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/refint/Fiscalo.Sdk.dll
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/Fiscalo.Sdk.xml
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/Fiscalo.Sdk.pdb
+/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/obj/Release/net8.0/ref/Fiscalo.Sdk.dll

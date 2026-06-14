@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Fiscalo.Sdk</id>
+    <version>0.1.0</version>
+    <authors>Fiscalo</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://docs.fiscalo.pt/integrations/dotnet</projectUrl>
+    <description>Official .NET SDK for the Fiscalo Public API.</description>
+    <tags>fiscalo invoice invoicing portugal api sdk billing</tags>
+    <repository type="git" url="https://github.com/fiscalo-pt/dotnet-sdk" commit="809c73122a4225d6e3575ceb5d0100291d0be8fc" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="8.0.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Http" version="8.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/joao/Documents/GitHub/fiscalo-site/integrations/dotnet-sdk/src/Fiscalo.Sdk/bin/Release/net8.0/Fiscalo.Sdk.pdb" target="lib/net8.0/Fiscalo.Sdk.pdb" />
+  </files>
+</package>
